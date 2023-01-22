@@ -1,7 +1,7 @@
 # Screeps Shard 3 CPU Dashboard
 A graphical dashboard for reviewing CPU in the game Screeps for dedicated Shard 3 players
 
-![alt-taext](https://user-images.githubusercontent.com/119445189/213865229-6d9569a3-ad78-4352-ad37-62180c3de794.png)
+![alt-taext](https://user-images.githubusercontent.com/119445189/213894868-956eb4a0-54da-47cc-889e-2374507f9e76.png)
 
 ## How to add:
 
@@ -9,6 +9,7 @@ A graphical dashboard for reviewing CPU in the game Screeps for dedicated Shard 
 
 Before your main loop, add:
 ```
+global.bucket = [];
 global.CPU = [];
 require('module.chartCPU');
 ```
@@ -17,9 +18,13 @@ require('module.chartCPU');
 
 At the very end of your main loop, add:
 ```
-CPU.push(Game.cpu.getUsed());
-if(CPU.length>500) {
-  CPU.shift();
+bucket.push(Game.cpu.bucket)
+if(bucket.length > 500) {
+    bucket.shift()
+}
+CPU.push(Game.cpu.getUsed())
+if(CPU.length > 500) {
+    CPU.shift()
 }
 ```
 
