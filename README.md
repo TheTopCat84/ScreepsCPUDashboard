@@ -30,7 +30,7 @@ if(CPU.length > 500) {
 
 ### Step 3:
 
-Copy the module.chartCPU.js file into your code
+Copy the module.chartCPU.js file into your repo/files
 
 ## How to run:
 
