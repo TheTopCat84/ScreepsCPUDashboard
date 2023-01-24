@@ -40,7 +40,7 @@ Within console, simply type:
 chartCPU()
 ```
 
-###Notes
+### Notes
 
 - The chart will only show for 1 tick - you should be ready to use screen-snip (windows key + shift  + s)
 - The scale is setup for Shard 3 players but can easily be modified
