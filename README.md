@@ -1,5 +1,5 @@
-# Screeps Shard 3 CPU Dashboard
-A graphical dashboard for reviewing CPU in the game Screeps for dedicated Shard 3 players
+# Screeps CPU Dashboard
+A graphical dashboard for reviewing CPU in the game Screeps
 
 ![alt-taext](https://user-images.githubusercontent.com/119445189/213894868-956eb4a0-54da-47cc-889e-2374507f9e76.png)
 
@@ -40,4 +40,8 @@ Within console, simply type:
 chartCPU()
 ```
 
-Note: the chart will only show for 1 tick - you should be ready to use screen-snip (windows key + shift  + s)
+###Notes
+
+- The chart will only show for 1 tick - you should be ready to use screen-snip (windows key + shift  + s)
+- The scale is setup for Shard 3 players but can easily be modified
+- The stats being tracked can easily be modified for other things - go nuts!
